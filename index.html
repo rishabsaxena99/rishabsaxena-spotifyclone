@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Spotify: Music Player </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        
+        <div class="songList">
+        <h1>Best of Spotify Music</h1>
+        <div class="songItemContainer">
+            <div class="songItem">
+                <img src=covers/c1.jpg alt="1">
+                <span class="songName">Kahani Suno 2.0</span>
+                <span class="songListPlay"><span class="timestamp">03:52 
+                    <i id="0" class="far songItemPlay fa-circle-play"></i></span>   
+                </span>
+            </div>
+            <div class="songItem">
+                <img src=covers/c2.jpg  alt="2">
+                <span class="songName">O Bedardeya</span>
+                <span class="songlistplay"><span class="timestamp">02:51
+                    <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songItem">
+                <img src=covers/c3.jpg  alt="3">
+                <span class="songName">Maan Meri Jaan</span>
+                <span class="songlistplay"><span class="timestamp">03:15
+                    <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songItem">
+                <img  src=covers/c4.jpg alt="4">
+                <span class="songName">Kesariya</span>
+                <span class="songlistplay"><span class="timestamp">04:28
+                    <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songItem">
+                <img  src=covers/c5.jpg alt="5">
+                <span class="songName">Samjhawaan</span>
+                <span class="songlistplay"><span class="timestamp">04:29
+                    <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songItem">
+                <img  src=covers/c6.jpg  alt="6">
+                <span class="songName">Manike</span>
+                <span class="songlistplay"><span class="timestamp">03:18
+                    <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+        </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+        <!--FontAwesomeIcons-->
+        <i class="fas fa-2x  fa-fast-backward" id="previous"></i>
+        <i class="far fa-2x  fa-circle-play" id="masterPlay"></i>
+        <i class="fas fa-2x  fa-fast-forward" id="next"></i>   
+        </div>
+        <div class="songInfo">
+         <img src="playing.gif" alt="" width="40px" id="gif"> Spotify Premium Music <span id="masterSongName"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/1bc305b007.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
